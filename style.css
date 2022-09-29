@@ -38,12 +38,12 @@ main{
 .star-circle{
     background-color: var(--mediumBlue);
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;   
-    width: 40px;
-    height: 40px;
 }
 
 .star-circle img{
@@ -52,16 +52,59 @@ main{
 }
 
 h1{
+    margin-top: 18px;
+    margin-bottom: 12px;
+    
     color: var(--white);
     font-size: 1.7em;
     font-weight: 700;
-    margin-top: 18px;
-    margin-bottom: 12px;
 }
 
 p{
+    margin-top: 0px;
+    
     font-size: 1em;
     font-weight: 400;
-    margin-top: 0px;
     line-height: 22px;
+}
+
+.radio-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio] ~ div:first-of-type{
+    background-color: var(--mediumBlue);
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+input[type=radio]:checked ~ div:first-of-type{
+    background-color: var(--orange);
+}
+
+.submit-button{
+    margin-top: 24px;
+    margin-bottom: 7px;
+    border: none;
+    height: 45px;
+    border-radius: 22.5px;
+
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.17em;
 }
