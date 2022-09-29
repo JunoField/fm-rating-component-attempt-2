@@ -3,10 +3,12 @@
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
-    --darkBlue: hsl(213, 19%, 18%);
+    --mediumBlue: hsl(213, 19%, 18%);
+    --darkBlue: hsl(213, 19%, 14%);
     --veryDarkBlue: hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    color: var(--lightGrey);
 }
 
 body{
@@ -20,8 +22,46 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 87%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 }
 
 .hidden{
     display: none;
+}
+
+.star-circle{
+    background-color: var(--mediumBlue);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 40px;
+    height: 40px;
+}
+
+.star-circle img{
+    width: 15px;
+    height: 15px;
+}
+
+h1{
+    color: var(--white);
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 0px;
+    line-height: 22px;
 }
