@@ -9,6 +9,8 @@
     font-family: 'Overpass', sans-serif;
     font-size: 14px;
     color: var(--lightGrey);
+
+    --circle-sizing: 41px;
 }
 
 body{
@@ -38,8 +40,8 @@ main{
 .star-circle{
     background-color: var(--mediumBlue);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: var(--circle-sizing);
+    height: var(--circle-sizing);
 
     display: flex;
     align-items: center;
@@ -81,8 +83,8 @@ input[type=radio]{
 
 input[type=radio] ~ div:first-of-type{
     background-color: var(--mediumBlue);
-    width: 41px;
-    height: 41px;
+    width: var(--circle-sizing);
+    height: var(--circle-sizing);
     border-radius: 20px;
 
     display: flex;
@@ -130,4 +132,15 @@ input[type=radio]:checked ~ div:first-of-type{
     right: 0px;
     bottom: 0px;
     font-size: 10px;
+}
+
+/*Desktop Site*/
+@media only screen and (min-width: 1000px){
+    :root{
+        font-size: 15px;
+    }
+
+    main{
+        width: 412px;
+    }
 }
