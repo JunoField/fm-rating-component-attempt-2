@@ -89,11 +89,20 @@ input[type=radio] ~ div:first-of-type{
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    transition: all 200ms;
+}
+
+input[type=radio] ~ div:first-of-type:hover{
+    background-color: var(--mediumGrey);
+    color: var(--white);
 }
 
 input[type=radio]:checked ~ div:first-of-type{
     background-color: var(--orange);
+    color: var(--white);
 }
+
+
 
 .submit-button{
     margin-top: 24px;
@@ -107,4 +116,10 @@ input[type=radio]:checked ~ div:first-of-type{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.17em;
+    transition: all 200ms;
+}
+
+.submit-button:hover{
+    color: var(--orange);
+    background-color: var(--white);
 }
