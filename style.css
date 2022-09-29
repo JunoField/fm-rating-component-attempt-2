@@ -9,8 +9,6 @@
     font-family: 'Overpass', sans-serif;
     font-size: 14px;
     color: var(--lightGrey);
-
-    --circle-sizing: 41px;
 }
 
 body{
@@ -37,12 +35,14 @@ main{
     display: none;
 }
 
-.star-circle{
+.circle{
+    width: 41px;
+    height: 41px;
     background-color: var(--mediumBlue);
     border-radius: 50%;
-    width: var(--circle-sizing);
-    height: var(--circle-sizing);
+}
 
+.star-circle{
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -82,10 +82,7 @@ input[type=radio]{
 }
 
 input[type=radio] ~ div:first-of-type{
-    background-color: var(--mediumBlue);
-    width: var(--circle-sizing);
-    height: var(--circle-sizing);
-    border-radius: 50%;
+
 
     display: flex;
     align-items: center;
@@ -138,12 +135,16 @@ input[type=radio]:checked ~ div:first-of-type{
 @media only screen and (min-width: 1000px){
     :root{
         font-size: 15px;
-        --circle-sizing: 49px;
     }
 
     main{
         width: 412px;
         box-sizing: border-box;
         padding: 32px;
+    }
+
+    .circle{
+        width: 49px;
+        height: 49px;
     }
 }
