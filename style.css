@@ -147,11 +147,31 @@ input[type=radio]:checked ~ div:first-of-type{
     main{
         width: 412px;
         box-sizing: border-box;
-        padding: 32px;
+        padding: 33px;
     }
+
 
     .circle{
         width: 49px;
         height: 49px;
+    }
+
+    h1{
+        font-size: 1.85em;
+        margin-top: 31px;
+        margin-bottom: 8px;
+    }
+
+    p{
+        line-height: 1.6em;
+    }
+
+    .radio-section{
+        margin-top: 11px;
+    }
+
+    .submit-button{
+        margin-top: 35px;
+        margin-bottom: 0px;
     }
 }
