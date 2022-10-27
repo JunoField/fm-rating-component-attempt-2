@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <script src="./rating.js" defer></script>
 </head>
 <body>
 
@@ -25,16 +27,16 @@
     to help us improve our offering!</p>
 
     <div class="radio-section">
-      <label class="rating-circle"><input type="radio" id="rating-1" name="radio-rating" autocomplete="off"><div class="circle">1</div></label>
-      <label class="rating-circle"><input type="radio" id="rating-2" name="radio-rating" autocomplete="off"><div class="circle">2</div></label>
-      <label class="rating-circle"><input type="radio" id="rating-3" name="radio-rating" autocomplete="off"><div class="circle">3</div></label>
-      <label class="rating-circle"><input type="radio" id="rating-4" name="radio-rating" autocomplete="off"><div class="circle">4</div></label>
-      <label class="rating-circle"><input type="radio" id="rating-5" name="radio-rating" autocomplete="off"><div class="circle">5</div></label>
+      <label class="rating-circle"><input type="radio" id="rating-1" name="radio-rating" autocomplete="off" value="1"><div class="circle">1</div></label>
+      <label class="rating-circle"><input type="radio" id="rating-2" name="radio-rating" autocomplete="off" value="2"><div class="circle">2</div></label>
+      <label class="rating-circle"><input type="radio" id="rating-3" name="radio-rating" autocomplete="off" value="3"><div class="circle">3</div></label>
+      <label class="rating-circle"><input type="radio" id="rating-4" name="radio-rating" autocomplete="off" value="4"><div class="circle">4</div></label>
+      <label class="rating-circle"><input type="radio" id="rating-5" name="radio-rating" autocomplete="off" value="5"><div class="circle">5</div></label>
     </div>
 
-    <label class="no-input-error hidden">Please select an option</label>
+    <label id="no-input-error" class="no-input-error hidden">Please select an option</label>
 
-    <input type="button" class="submit-button" value="Submit">
+    <input type="button" class="submit-button" value="Submit" id="submit-button">
 
   </main>
   <!-- Rating state end -->
