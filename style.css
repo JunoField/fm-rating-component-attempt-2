@@ -6,6 +6,7 @@
     --mediumBlue: hsl(213, 19%, 18%);
     --darkBlue: hsl(213, 19%, 14%);
     --veryDarkBlue: hsl(216, 12%, 8%);
+    --errorRed : hsl(0, 100%, 50%);
     font-family: 'Overpass', sans-serif;
     font-size: 14px;
     color: var(--lightGrey);
@@ -101,6 +102,12 @@ input[type=radio]:checked ~ div:first-of-type{
     color: var(--white);
 }
 
+.no-input-error{
+    color: var(--errorRed);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -12px;
+}
 
 
 .submit-button{
