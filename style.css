@@ -132,17 +132,31 @@ input[type=radio]:checked ~ div:first-of-type{
 
 .main-thanks{
     align-items: center;
+    text-align: center;
 }
 
 .thanks-img{
     max-width: 144px;
     text-align: center;
+    margin: 10px auto 20px auto;
 }
+
 
 
 .confirm-display{
+    font-size: 1.02em;
+    color: var(--orange);
+    background-color: var(--mediumBlue);
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-inline: 12px;
+    border-radius: 30px;
+    margin-bottom: 10px;
 }
 
+.main-thanks h1{
+    margin-bottom: 10px;
+}
 
 
 .attribution{
