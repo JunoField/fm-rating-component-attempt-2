@@ -204,4 +204,13 @@ input[type=radio]:checked ~ div:first-of-type{
         margin-top: 35px;
         margin-bottom: 0px;
     }
+
+    .thanks-img{
+        max-width: 163px;
+        margin-bottom: 32px;
+    }
+
+    .confirm-display{
+        margin-bottom: 4px;
+    }
 }

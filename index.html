@@ -18,11 +18,9 @@
 <body>
 
   <!-- Rating state start -->
-  <main id="rating-state" class="main-rating hidden">
+  <main id="rating-state" class="main-rating">
     <div class="circle star-circle"><img src="./images/icon-star.svg" alt=""></div>
-
     <h1>How did we do?</h1>
-
     <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
 
@@ -35,26 +33,17 @@
     </div>
 
     <label id="no-input-error" class="no-input-error hidden">Please select an option</label>
-
     <input type="button" class="submit-button" value="Submit" id="submit-button">
-
   </main>
-  <!-- Rating state end -->
 
-  <!-- Thank you state start -->
-  <main id="thanks-state" class="main-thanks ">
+  <main id="thanks-state" class="main-thanks hidden">
       <img class="thanks-img" src="./images/illustration-thank-you.svg"/>
-
-      <label class="confirm-display">You selected X out of 5</label>
-
-  <h1>Thank you!</h1>
-
-  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      <label id="confirm-display" class="confirm-display">You selected X out of 5</label>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</p>
-    </main>
-  <!-- Thank you state end -->
+  </main>
 
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/JunoField">Juno Field</a>.
