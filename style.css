@@ -130,6 +130,21 @@ input[type=radio]:checked ~ div:first-of-type{
     background-color: var(--white);
 }
 
+.main-thanks{
+    align-items: center;
+}
+
+.thanks-img{
+    max-width: 144px;
+    text-align: center;
+}
+
+
+.confirm-display{
+}
+
+
+
 .attribution{
     color: white;
     position: absolute;
@@ -139,7 +154,7 @@ input[type=radio]:checked ~ div:first-of-type{
 }
 
 /*Desktop Site*/
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 475px){
     :root{
         font-size: 15px;
     }

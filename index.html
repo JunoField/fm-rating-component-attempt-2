@@ -18,7 +18,7 @@
 <body>
 
   <!-- Rating state start -->
-  <main id="rating-state" class="main-rating">
+  <main id="rating-state" class="main-rating hidden">
     <div class="circle star-circle"><img src="./images/icon-star.svg" alt=""></div>
 
     <h1>How did we do?</h1>
@@ -42,10 +42,12 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <main id="thanks-state" class="main-thanks hidden">
-  You selected <!-- Add rating here --> out of 5
+  <main id="thanks-state" class="main-thanks ">
+      <img class="thanks-img" src="./images/illustration-thank-you.svg"/>
 
-  Thank you!
+      <label class="confirm-display">You selected X out of 5</label>
+
+  <h1>Thank you!</h1>
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
