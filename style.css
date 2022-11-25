@@ -26,17 +26,16 @@ main{
     width: 87%;
     border-radius: 15px;
     box-sizing: border-box;
+    
     display: flex;
     flex-direction: column;
     padding: 25px;
 }
 
-//utility class: used to hide any needed element
 .hidden{
     display: none;
 }
 
-//used for icon circle and radio button circles
 .circle{
     width: 41px;
     height: 41px;
@@ -44,7 +43,6 @@ main{
     border-radius: 50%;
 }
 
-//for top-left logo
 .star-circle{
     display: flex;
     align-items: center;
@@ -67,25 +65,26 @@ h1{
 
 p{
     margin-top: 0px;
+    
     font-size: 1em;
     font-weight: 400;
     line-height: 22px;
 }
 
-//radio button row
 .radio-section{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-//hide actual radio element as we are changing colours instead
+
 input[type=radio]{
     display: none;
 }
 
-//for visual element within radio
 input[type=radio] ~ div:first-of-type{
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,13 +102,13 @@ input[type=radio]:checked ~ div:first-of-type{
     color: var(--white);
 }
 
-//error message (not visible by default)
 .no-input-error{
     color: var(--errorRed);
     text-align: center;
     margin-top: 10px;
     margin-bottom: -12px;
 }
+
 
 .submit-button{
     margin-top: 24px;
@@ -131,7 +130,6 @@ input[type=radio]:checked ~ div:first-of-type{
     background-color: var(--white);
 }
 
-//-----THANKS SECTION-------
 .main-thanks{
     align-items: center;
     text-align: center;
@@ -143,7 +141,8 @@ input[type=radio]:checked ~ div:first-of-type{
     margin: 10px auto 20px auto;
 }
 
-//section for selected rating
+
+
 .confirm-display{
     font-size: 1.02em;
     color: var(--orange);

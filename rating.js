@@ -1,4 +1,3 @@
-//event listeners for radios
 document.getElementById("submit-button").addEventListener("click", (e) => {onFormSubmit()});
 document.querySelector(".radio-section").addEventListener("click", (e) => {onRadioSelected()});
 
