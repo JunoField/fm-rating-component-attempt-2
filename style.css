@@ -32,10 +32,12 @@ main{
     padding: 25px;
 }
 
+/*utility function - used for hidden elements*/
 .hidden{
     display: none;
 }
 
+/*for radio circles and logo circle*/
 .circle{
     width: 41px;
     height: 41px;
@@ -53,6 +55,7 @@ main{
     width: 15px;
     height: 15px;
 }
+
 
 h1{
     margin-top: 18px;
@@ -77,14 +80,13 @@ p{
     justify-content: space-between;
 }
 
-
+/*hide default radio as we are not using it*/
 input[type=radio]{
     display: none;
 }
 
+/*for visual part of radio*/
 input[type=radio] ~ div:first-of-type{
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +104,7 @@ input[type=radio]:checked ~ div:first-of-type{
     color: var(--white);
 }
 
+/*shown when submit is clicked without a choice selected*/
 .no-input-error{
     color: var(--errorRed);
     text-align: center;
@@ -140,8 +143,6 @@ input[type=radio]:checked ~ div:first-of-type{
     text-align: center;
     margin: 10px auto 20px auto;
 }
-
-
 
 .confirm-display{
     font-size: 1.02em;
